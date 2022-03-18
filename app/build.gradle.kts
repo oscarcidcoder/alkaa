@@ -61,7 +61,7 @@ android {
             add(
                 ManagedVirtualDevice("pixel2api26").apply {
                     device = "Pixel 2"
-                    apiLevel = 26
+                    apiLevel = 28
                     systemImageSource = "aosp"
                     abi = "x86"
                 }
