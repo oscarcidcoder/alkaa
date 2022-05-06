@@ -19,3 +19,4 @@ include(":libraries:designsystem")
 include(":libraries:navigation")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+enableFeaturePreview("VERSION_CATALOGS")

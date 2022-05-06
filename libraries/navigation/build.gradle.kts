@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation(Deps.android.ktx)
+    implementation(libs.androidx.corektx)
 }

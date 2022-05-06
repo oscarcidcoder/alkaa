@@ -15,10 +15,10 @@ dependencies {
     implementation(projects.domain)
     implementation(projects.libraries.designsystem)
 
-    implementation(Deps.koin.android)
-    implementation(Deps.coroutines.core)
-    implementation(Deps.koin.compose)
-    implementation(Deps.compose.activity)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
+    implementation(libs.coroutines.core)
+    implementation(libs.compose.activity)
 
     addComposeDependencies()
 

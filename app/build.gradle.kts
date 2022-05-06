@@ -70,12 +70,12 @@ dependencies {
     implementation(projects.features.search)
     implementation(projects.features.glance)
 
-    implementation(Deps.logcat)
-    implementation(Deps.compose.navigation)
-    implementation(Deps.compose.activity)
-    implementation(Deps.accompanist.animation)
-    implementation(Deps.android.playCore)
-    implementation(Deps.koin.android)
+    implementation(libs.logcat)
+    implementation(libs.compose.navigation)
+    implementation(libs.compose.activity)
+    implementation(libs.accompanist.animation)
+    implementation(libs.androidx.playcore)
+    implementation(libs.koin.android)
 
     addComposeDependencies()
 }

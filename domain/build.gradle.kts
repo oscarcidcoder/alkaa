@@ -3,12 +3,12 @@ plugins {
 }
 
 dependencies {
-    implementation(Deps.koin.core)
-    implementation(Deps.logging)
-    implementation(Deps.logback)
-    implementation(Deps.coroutines.core)
+    implementation(libs.koin.core)
+    implementation(libs.logging)
+    implementation(libs.logback)
+    implementation(libs.coroutines.core)
 
-    testImplementation(Deps.test.junit)
-    testImplementation(Deps.test.mockk)
-    testImplementation(Deps.coroutines.test)
+    testImplementation(libs.test.junit)
+    testImplementation(libs.test.mockk)
+    testImplementation(libs.coroutines.test)
 }

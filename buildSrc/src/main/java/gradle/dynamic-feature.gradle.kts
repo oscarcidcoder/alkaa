@@ -1,6 +1,5 @@
 package gradle
 
-import Deps
 import extensions.addDefaultConfig
 
 plugins {
@@ -13,10 +12,15 @@ android {
     addDefaultConfig()
 }
 
+fun libs(lib: String) =
+    project.extensions.getByType<VersionCatalogsExtension>()
+        .named("libs").findDependency(lib)
+        .get()
+
 dependencies {
-    implementation(Deps.logcat)
+    implementation(libs("logcat"))
     implementation(project(":app"))
     androidTestImplementation(project(":app"))
 
-    implementation(Deps.android.playCore)
+    implementation(libs("androidx.playcore"))
 }

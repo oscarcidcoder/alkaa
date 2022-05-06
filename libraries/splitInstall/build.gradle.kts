@@ -7,5 +7,5 @@ dependencies {
     implementation(projects.libraries.core)
     implementation(projects.libraries.designsystem)
 
-    implementation(Deps.android.playCore)
+    implementation(libs.androidx.playcore)
 }

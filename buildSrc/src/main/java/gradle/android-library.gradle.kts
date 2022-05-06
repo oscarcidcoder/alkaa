@@ -1,6 +1,5 @@
 package gradle
 
-import Deps
 import extensions.addDefaultConfig
 
 plugins {
@@ -8,6 +7,13 @@ plugins {
     id("kotlin-android")
     id("gradle.quality")
 }
+
+fun libs(lib: String) =
+    project.extensions.getByType<VersionCatalogsExtension>()
+        .named("libs").findDependency(lib)
+        .get()
+
+
 
 android {
     addDefaultConfig()
@@ -22,5 +28,5 @@ android {
 }
 
 dependencies {
-    implementation(Deps.logcat)
+    implementation(libs("logcat"))
 }

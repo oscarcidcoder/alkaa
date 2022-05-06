@@ -7,7 +7,7 @@ dependencies {
     implementation(projects.domain)
     implementation(projects.libraries.navigation)
 
-    implementation(Deps.koin.android)
-    implementation(Deps.koin.compose)
-    implementation(Deps.android.glance)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
+    implementation(libs.androidx.glance)
 }

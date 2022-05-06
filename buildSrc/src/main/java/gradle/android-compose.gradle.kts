@@ -8,10 +8,15 @@ plugins {
     id("kotlin-android")
 }
 
+fun libs(lib: String) =
+    project.extensions.getByType<VersionCatalogsExtension>()
+        .named("libs").findDependency(lib)
+        .get()
+
 android {
     addComposeConfig()
 }
 
 dependencies {
-    addComposeDependencies()
+    implementation(libs("compose"))
 }

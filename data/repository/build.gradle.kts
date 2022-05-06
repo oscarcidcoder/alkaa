@@ -5,6 +5,6 @@ plugins {
 dependencies {
     implementation(projects.domain)
 
-    implementation(Deps.koin.core)
-    implementation(Deps.coroutines.core)
+    implementation(libs.koin.core)
+    implementation(libs.coroutines.core)
 }

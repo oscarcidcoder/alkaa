@@ -13,6 +13,6 @@ dependencies {
     testImplementation(projects.libraries.test)
     androidTestImplementation(projects.libraries.test)
 
-    implementation(Deps.koin.android)
-    implementation(Deps.koin.compose)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
 }

@@ -4,6 +4,6 @@ plugins {
 }
 
 dependencies {
-    implementation(Deps.coroutines.core)
-    implementation(Deps.koin.android)
+    implementation(libs.coroutines.core)
+    implementation(libs.koin.android)
 }

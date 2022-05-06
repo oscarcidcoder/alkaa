@@ -3,8 +3,8 @@ plugins {
 }
 
 dependencies {
-    implementation(Deps.android.ktx)
-    implementation(Deps.android.material)
-    implementation(Deps.coroutines.core)
-    implementation(Deps.koin.android)
+    implementation(libs.androidx.corektx)
+    implementation(libs.androidx.material)
+    implementation(libs.coroutines.core)
+    implementation(libs.koin.android)
 }

@@ -14,12 +14,12 @@ dependencies {
     testImplementation(projects.libraries.test)
     androidTestImplementation(projects.libraries.test)
 
-    implementation(Deps.android.playCore)
+    implementation(libs.androidx.playcore)
 
-    implementation(Deps.koin.android)
-    implementation(Deps.koin.compose)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
 
-    testImplementation(Deps.test.coreKtx)
-    androidTestImplementation(Deps.compose.activity)
-    androidTestImplementation(Deps.test.barista)
+    testImplementation(libs.test.corektx)
+    androidTestImplementation(libs.compose.activity)
+    androidTestImplementation(libs.test.barista)
 }

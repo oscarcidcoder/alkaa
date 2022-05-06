@@ -4,6 +4,6 @@ plugins {
 }
 
 dependencies {
-    implementation(Deps.koin.android)
-    implementation(Deps.compose.viewModel)
+    implementation(libs.koin.android)
+    implementation(libs.compose.viewmodel)
 }

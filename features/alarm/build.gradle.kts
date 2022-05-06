@@ -8,9 +8,9 @@ dependencies {
     implementation(projects.libraries.navigation)
     implementation(projects.domain)
 
-    implementation(Deps.coroutines.core)
-    implementation(Deps.koin.android)
+    implementation(libs.coroutines.core)
+    implementation(libs.koin.android)
 
-    testImplementation(Deps.test.junit)
-    testImplementation(Deps.test.mockk)
+    testImplementation(libs.test.junit)
+    testImplementation(libs.test.mockk)
 }

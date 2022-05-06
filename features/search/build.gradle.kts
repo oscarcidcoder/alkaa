@@ -8,8 +8,8 @@ dependencies {
     implementation(projects.domain)
     implementation(projects.libraries.designsystem)
 
-    implementation(Deps.koin.android)
-    implementation(Deps.koin.compose)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
 
     testImplementation(projects.libraries.test)
     androidTestImplementation(projects.libraries.test)

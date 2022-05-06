@@ -18,10 +18,6 @@ object Versions {
 
     const val coroutines = "1.4.0"
 
-    const val logging = "1.12.5"
-    const val logback = "1.2.6"
-    const val logcat = "0.1"
-
     const val koin = "3.1.0"
 
     const val testJunit = "4.12"
@@ -44,9 +40,6 @@ object Versions {
 }
 
 object Deps {
-    const val logging = "io.github.microutils:kotlin-logging:${Versions.logging}"
-    const val logback = "ch.qos.logback:logback-classic:${Versions.logback}"
-    const val logcat = "com.squareup.logcat:logcat:${Versions.logcat}"
     val android = AndroidDeps
     val coroutines = CoroutinesDeps
     val koin = KoinDeps
